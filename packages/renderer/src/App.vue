@@ -20,7 +20,8 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: tomato;
+  font-size: 30px;
   color: #fff;
   padding: 30px 40px;
   height: calc(100vh - 80px);

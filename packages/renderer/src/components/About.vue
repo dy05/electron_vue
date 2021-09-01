@@ -1,35 +1,38 @@
 <template>
-  <h2 id="versions">
-    Lib versions
-  </h2>
+  <h1>
+    Welcome guy
+  </h1>
   <div>
-    <ul aria-labelledby="versions">
-      <li
-        v-for="(version, lib) in versions"
-        :key="lib"
-      >
-        <strong>{{ lib }}</strong>: v{{ version }}
-      </li>
-    </ul>
+    <p>
+      welcome to this blabla bla Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Dolor ducimus eaque et eveniet id ipsum, minima nobis obcaecati odit placeat quae quisquam
+      repudiandae tenetur voluptatem voluptatum. Dolores magni totam voluptas.
+      <br>
+      Krkkrkrkrrkrkrkrk
+    </p>
+    <hr>
+  </div>
+  <div>
+    Oh yo si ya
+    Ah zut
   </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue';
-import {useElectron} from '/@/use/electron';
 export default defineComponent({
-  name: 'App',
-  setup() {
-    const {versions} = useElectron();
-    // It makes no sense to make "versions" reactive
-    return {versions};
-  },
+  name: 'About',
 });
 </script>
 
 <style scoped>
+
 div {
-  text-align: left;
+  display: flex;
+}
+p {
+  width: 200px;
+  text-align: right;
   display: grid;
   justify-content: center;
 }
