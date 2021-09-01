@@ -19,11 +19,13 @@ export default defineComponent({
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: tomato;
+  background-color: #42b983;
   font-size: 30px;
   color: #fff;
   padding: 30px 40px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
+}
+a {
+  text-decoration: none;
 }
 </style>
