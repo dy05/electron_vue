@@ -1,32 +1,14 @@
 <template>
-  <p>
-    For a guide and recipes on how to configure / customize this project,<br>
-    check out the
-    <a
-      href="https://github.com/cawa-93/vite-electron-builder"
-      rel="noopener"
-      target="_blank"
-    >vite-electron-builder documentation</a>.
-  </p>
+  <h1>
+    Why {{ count }}
+  </h1>
 
-  <p>
-    <a
-      href="https://vitejs.dev/guide/features.html"
-      target="_blank"
-    >Vite Documentation</a> |
-    <a
-      href="https://v3.vuejs.org/"
-      target="_blank"
-    >Vue 3 Documentation</a>
-  </p>
-
-  <hr>
   <button @click="count++">
-    count is: {{ count }}
+    Wetting man go do do do do do do do
   </button>
+
   <p>
-    Edit
-    <code>renderer/components/Home.vue</code> to test hot module replacement.
+    I cant understand why you're looking for.
   </p>
 </template>
 
