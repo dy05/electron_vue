@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      Accueil
+      Accueil - Version 5
     </h1>
 
     <hr>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      Version 5
+      Rentrer a l'accueil
     </h1>
     <p>
       On attend pas que la notification apparaisse, mais dans une prochaine version certainemment !
