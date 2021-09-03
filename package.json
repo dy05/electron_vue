@@ -1,5 +1,12 @@
 {
-  "name": "vite-electron-builder",
+  "name": "l2v-erp-front",
+  "author": {
+    "name": "Lab2view",
+    "email": "contact@lab2view.com",
+    "url": "https://lab2view.com"
+  },
+  "description": "an ERP",
+  "homepage": "",
   "version": "1.0.6",
   "private": true,
   "engines": {
