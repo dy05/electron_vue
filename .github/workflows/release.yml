@@ -108,6 +108,8 @@ jobs:
           RELEASE_NOTE: ${{ needs.draft.outputs.release-note }}
         run: echo "$RELEASE_NOTE" >> ./buildResources/release-notes.md
 
+      # If you are building/releasing your Linux app for Snapcraft (which is electron-builder's default),
+      # you will additionally need to install and sign in to Snapcraft.
       # - name: Install Snapcraft
       #   uses: samuelmeuli/action-snapcraft@v1
       #   # Only install Snapcraft on Ubuntu

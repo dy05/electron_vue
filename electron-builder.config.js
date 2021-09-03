@@ -19,11 +19,6 @@ const config = {
     version: process.env.VITE_APP_VERSION,
   },
 
-  // 'build': {
-  //   // 'appId': 'com.example.app',
-  //   'productName ' : 'Lab2view ERP',
-  // },
-
   'appId': 'com.lab2view.erp',
   'productName': 'Lab2view ERP',
   'copyright': 'Copyright © 2021 lab2view',
@@ -33,6 +28,7 @@ const config = {
     'target': [
        'zip',
        'AppImage',
+       'deb',
       //  'deb',
       //  'snap',
     ],
