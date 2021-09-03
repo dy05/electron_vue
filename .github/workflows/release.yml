@@ -84,9 +84,9 @@ jobs:
 
     strategy:
       matrix:
-        os: [ windows-latest ]
+        os: [ windows-latest, macos-latest, ubuntu-latest]
     #    To compile the application for different platforms, use:
-    #    os: [ macos-latest, ubuntu-latest, windows-latest ]
+    #    os: [ macos-latest, ubuntu-latest, ubuntu-18.04, ubuntu-20.04, windows-latest ]
 
     runs-on: ${{ matrix.os }}
 
@@ -107,6 +107,16 @@ jobs:
         env:
           RELEASE_NOTE: ${{ needs.draft.outputs.release-note }}
         run: echo "$RELEASE_NOTE" >> ./buildResources/release-notes.md
+
+      # If you are building/releasing your Linux app for Snapcraft (which is electron-builder's default),
+      # you will additionally need to install and sign in to Snapcraft.
+      # - name: Install Snapcraft
+      #   uses: samuelmeuli/action-snapcraft@v1
+      #   # Only install Snapcraft on Ubuntu
+      #   if: startsWith(matrix.os, 'ubuntu')
+      #   with:
+      #     # Log in to Snap Store
+      #     snapcraft_token: ${{ secrets.snapcraft_token }}
 
       # Compile app and upload artifacts
       - name: Compile & release Electron app
