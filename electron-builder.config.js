@@ -18,6 +18,33 @@ const config = {
   extraMetadata: {
     version: process.env.VITE_APP_VERSION,
   },
+
+  // 'build': {
+  //   // 'appId': 'com.example.app',
+  //   'productName ' : 'Lab2view ERP',
+  // },
+
+  'appId': 'com.lab2view.erp',
+  'productName': 'Lab2view ERP',
+  'copyright': 'Copyright © 2021 lab2view',
+
+  // @see https://www.electron.build/configuration/linux
+  'linux': {
+    'target': [
+       'zip',
+       'AppImage',
+      //  'deb',
+      //  'snap',
+    ],
+  },
+
+//   'mac': {
+//     'category': 'public.app-category.business',
+//     'target': [
+//        'zip',
+//        'dmg',
+//     ],
+//  },
 };
 
 module.exports = config;
