@@ -76,7 +76,7 @@ jobs:
           prerelease: true
           draft: true
           tag_name: v${{ steps.version.outputs.build-version }}
-          name: v${{ steps.version.outputs.build-version }}
+          name: v${{ steps.vers ion.outputs.build-version }}
           body: ${{ steps.release-note.outputs.release-note }}
 
   upload_artifacts:
@@ -84,7 +84,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ windows-latest ]
+        os: [ windows-latest, macos-latest, macos-latest, ]
     #    To compile the application for different platforms, use:
     #    os: [ macos-latest, ubuntu-latest, windows-latest ]
 
